@@ -40,6 +40,12 @@ app.post('/save', (req, res, next) => {
     });
 })
 
+app.post('/update', (req, res, next) => {
+    Set.findOneAndUpdate({_id: req.body._id}, 
+        {"name": req.body.name, "set": req.body.set})
+        .then(result => res.status(200).json(result))
+})
+
 app.get('/set/:setId', (req,res,next)=> {
     const setId = req.params.setId;
     Set.findById(setId)
