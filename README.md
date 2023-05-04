@@ -1,4 +1,4 @@
-# WebDevFinalBackend
+# WebDevFinalBackend (NodeJS)
 ## About
 Simple Backend to store and use Flashcards using MongoDB
 
